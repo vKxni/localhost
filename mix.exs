@@ -4,7 +4,7 @@ defmodule Localhost.MixProject do
   def project do
     [
       app: :localhost,
-      description: "Running things through TCP on localhost",
+      description: "View the (local) time through a local(host) telnet.",
       version: "0.1.0",
       elixir: "~> 1.15",
       start_permanent: Mix.env() == :prod,
@@ -23,7 +23,8 @@ defmodule Localhost.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-     {:thousand_island, "~> 1.3.5"}
+     {:thousand_island, "~> 1.3.5"},
+     {:timex, "~> 3.7.11"}
     ]
   end
 end
